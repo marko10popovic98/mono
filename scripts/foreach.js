@@ -4,7 +4,7 @@ process.on('unhandledRejection', error => { throw error; });
 
 const { readdir } = require('fs').promises;
 const { resolve } = require('path');
-const execute = require('../packages/async-execute');
+const execute = require('async-execute');
 
 const { argv } = process;
 argv.shift();
